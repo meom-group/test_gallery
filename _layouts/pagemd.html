@@ -14,27 +14,13 @@ layout: default
         
             <div class="panel-body">
                 <div class="row">
-                    <div class="col-md-2">
-                        {% if page.prevlink %}
-                             <a href="{{site.baseurl}}/{{page.prevlink}}"> <i class="fa fa-arrow-circle-left"> </i>   Previous topic   </a>
-                        {% endif %}
-                    </div>
+                   
                     <div class="col-md-8">
                         <h3 class="bio-heading"> </h3>
                         
 
                         {{ page.content | markdownify }}
 
-                        {% if page.link %} 
-                            <p class="date"> <a href="{{page.link}}"> En savoir plus </a> </p>
-                        {% endif %}
-                    </div>
-                    <div class="col-md-2">
-                        {% if page.nextlink %}
-
-                            <a href="{{site.baseurl}}/{{page.nextlink}}"> Next topic  <i class="fa fa-arrow-circle-right"> </i> </a>
-                        {% endif %}
-                    </div>
  
                 </div>
             </div>
